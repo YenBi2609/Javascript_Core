@@ -22,6 +22,6 @@ function findDivisibleNum(array, x) {
     });
     console.log(a);
   }
-  findDivisibleNum([1, 3, 4], 2);
+  findDivisibleNum([1, 6, 4], 2);
 
 
