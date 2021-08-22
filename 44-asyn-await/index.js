@@ -11,11 +11,13 @@ function readFilePromise(path){
         });
     });   
 }
+// async-await làm promise dễ dàng hơn để viết
 // function return 1 promise , dùng để set sau 1 khoảng time --> trang web thay đổi
+// khai báo hàm async ( async make function return a promise), await chỉ có thể sử dụng bên trong hàm async
 async function run(){
-    var song1 = await readFilePromise('./song1.txt');
-    var song2 = await readFilePromise('./song2.txt'); // await make song2 chờ song 1 chạy xong ( return a promise)
-    return [song1,song2];
+    var song1 = await readFilePromise('./song1.txt'); // await đi kèm 1 Promise, chờ song1 chạy song --> return a pomise
+    var song2 = await readFilePromise('./song2.txt'); 
+    return [song1,song2]; // return 1 mảng các Promise
 }
 run().then(function(values){
     console.log(values);
