@@ -5,6 +5,7 @@
 // var myDogString = JSON.stringify(myDog);
 
 // console.log(myDogString);
+// console.log(typeof myDogString);
 
 // var myCatString = '{"name":"Tom","age":2,"dead":true}';
 // var myCat = JSON.parse(myCatString);
@@ -20,33 +21,33 @@
  * 6. Mở file data.json để kiểm chứng xem bạn làm đúng không
  */
 
-var readlineSync = require('readline-sync');
-var fs = require('fs');
+// var readlineSync = require('readline-sync');
+// var fs = require('fs');
 
-var myReadString = fs.readFileSync('./data.json', { encoding: 'utf8'});
-var myRead = JSON.parse(myReadString);
-console.log(myRead.name);
+// var myReadString = fs.readFileSync('./data.json', { encoding: 'utf8'});
+// var myRead = JSON.parse(myReadString);
+// console.log(myRead.name);
 
-myRead.members = [];
+// myRead.members = [];
 
-while(true){
-    var options = readlineSync.question('What is your option?');
-    if( options == 1){
-        console.log(fs.readFileSync('./data.json', { encoding: 'utf8'}));
-    }
-    if( options == 2){
-let me ={};
-me.name = readlineSync.question('name?');
-me.gender = readlineSync.question('gender?');
-me.age = readlineSync.question('age?');
+// while(true){
+//     var options = readlineSync.question('What is your option?');
+//     if( options == 1){
+//         console.log(fs.readFileSync('./data.json', { encoding: 'utf8'}));
+//     }
+//     if( options == 2){
+// let me ={};
+// me.name = readlineSync.question('name?');
+// me.gender = readlineSync.question('gender?');
+// me.age = readlineSync.question('age?');
 
-myRead.members.push(me);
-fs.writeFileSync('./data.json',JSON.stringify(myRead));
-     }
+// myRead.members.push(me);
+// fs.writeFileSync('./data.json',JSON.stringify(myRead));
+//      }
 
-if( options == 3){
-    break;
-}
-}
+// if( options == 3){
+//     break;
+// }
+// }
 
 

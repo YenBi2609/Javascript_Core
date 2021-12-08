@@ -17,7 +17,7 @@ function readFilePromise(path){
 async function run(){
     var song1 = await readFilePromise('./song1.txt'); // await đi kèm 1 Promise, chờ song1 chạy song --> return a pomise
     var song2 = await readFilePromise('./song2.txt'); 
-    return [song1,song2]; // return 1 mảng các Promise
+    return [song1,song2]; // return 1 mảng các P0romise
 }
 run().then(function(values){
     console.log(values);

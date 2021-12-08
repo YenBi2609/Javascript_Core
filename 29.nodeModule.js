@@ -7,7 +7,6 @@ var math = {
   };
   
   module.exports = math;
-
 // file index.js
 /**
  * 1. Require module math

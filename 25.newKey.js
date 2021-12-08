@@ -59,18 +59,18 @@
  *  removeProp("name") = { class: “VI”, rollno: 12 }
 */
 
-function removeProp(prop) {
-    var student = {
-            name : "David Rayy",
-            class : "VI",
-            rollno : 12
-        };
+// function removeProp(prop) {
+//     var student = {
+//             name : "David Rayy",
+//             class : "VI",
+//             rollno : 12
+//         };
 
-   delete student[prop];
-    console.log(student);
-    }
+//    delete student[prop];
+//     console.log(student);
+//     }
 
-removeProp('name');
+// removeProp('name');
 
 
 /**

@@ -40,22 +40,22 @@
 */
 
 
-// function removeDuplicate(array) {
+function removeDuplicate(array) {
 
-    // var d = array.filter(function(x,pos){
-    //     return array.indexOf(x) == pos;
-    // });
-    // console.log(d);
-  //   var a = [];
-  //   var d= array.sort();
-  //   for( var i =0 ; i < d.length; i++){
-  //    if( d[i] !== d[i+1])
-  //        a.push(d[i]);
-  //       }
-  //    console.log(a);
+    var d = array.filter(function(x,pos){
+        return array.indexOf(x) == pos;
+    });
+    console.log(d);
+    var a = [];
+    var d= array.sort();
+    for( var i =0 ; i < d.length; i++){
+     if( d[i] !== d[i+1])
+         a.push(d[i]);
+        }
+     console.log(a);
 
-  // }
-  // removeDuplicate([1,2,1]);
+  }
+  removeDuplicate([1,2,1]);
 
   /**
  * Count the occurrences of each element inside an array using reduce

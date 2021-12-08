@@ -6,7 +6,6 @@
 // };
 // var beep = function(){
 //   console.log('Tít tít');
-  
 // };
 // console.log(coffeeMachine.makeCoffee(beep));
 
@@ -62,19 +61,19 @@
  * - Trả về result array
  */
 
-function transform(numbers, double) {
-  var a = [];
-  for(var i of numbers){
+// function transform(numbers, double) {
+//   var a = [];
+//   for(var i of numbers){
 
-      a.push(double(i));}
-  return a;
-}
-function double(num){
+//       a.push(double(i));}
+//   return a;
+// }
+// function double(num){
 
-  return num*2;
-}
+//   return num*2;
+// }
 
-console.log(transform([21, 11, 5], double));
+// console.log(transform([21, 11, 5], double));
 
 
 

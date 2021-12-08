@@ -19,9 +19,9 @@
 //     // Write code here...
 //     var a  = numbers.map(tripple);
         
-//     return a;
+//     console.log(a);
 //   }
-// console.log(multiply([1,2,3]));
+// multiply([1,2,3]);
 
 // Use array map make an array of strings of the names
 
@@ -51,15 +51,15 @@ var users = [
     }
   ]
   
-//   function namesOnly(arr) {
-//     // Write code here...
+  function namesOnly(arr) {
+    // Write code here...
     
-//     var a = arr.map(function(i){
-//             return i.name ;
-//     });
-//     console.log(a);
-//   }
-//     namesOnly(users); 
+    var a = arr.map(function(i){
+            return i.name ;
+    });
+    console.log(a);
+  }
+  namesOnly(users); 
 function readyToPutInTheDOM(arr) {
     // Write code here...
     
